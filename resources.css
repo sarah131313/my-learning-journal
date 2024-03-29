@@ -1,0 +1,259 @@
+html,
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* -------------------first section style --------------------------*/
+
+
+main {
+    color: white;
+    padding: 1.25em;
+}
+
+
+.main-text {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.875em 3.125em 1.875em 1.875em;
+}
+
+.border {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 0.937em 1.875em;
+    display: flex;
+    margin: 1.25em 0;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.border p {
+    margin-right: 0.312em;
+}
+
+.figma {
+    position: relative;
+
+}
+
+.figma-blur {
+    top: 0;
+    left: 0;
+}
+
+
+.border img {
+    max-width: 90px;
+    height: 5.625em;
+    align-self: center;
+
+}
+
+.border:hover {
+    box-shadow: 0 0 20px #E5BD5A;
+}
+
+.frontend-links {
+    background-color: #E5BD5A;
+    height: 100vh;
+}
+
+.first-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.first-container p {
+    font-weight: 300;
+}
+
+.others span {
+    font-weight: 400;
+    color: #E5BD5A;
+}
+
+.others p a {
+    text-decoration: underline;
+    margin-left: 0.83em;
+}
+
+
+.second-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.875em;
+    margin-bottom: 1.875em;
+}
+
+
+.template {
+    text-align: center;
+    align-self: center;
+
+}
+
+.template a {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    background-color: #E5BD5A;
+    font-weight: 600;
+    border: 0.5px solid white;
+
+}
+
+.template a:hover {
+    box-shadow: 0 0 25px #E5BD5A;
+}
+
+
+#reminder {
+    text-align: center;
+    margin-top: 3.125em;
+    font-weight: 400;
+
+}
+
+
+/*----------------- SLIDER -------------------- */
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.blur-swiper-right {
+    top: 0;
+    right: 0;
+
+}
+
+.blur-swiper-left {
+    left: 0;
+    bottom: 0;
+}
+
+
+
+.testimonial {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.testimonial .image {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.slide p {
+    text-align: center;
+    padding: 0 70px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.slide .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #E5BD5A;
+}
+
+.details .job {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+/* swiper button css */
+.nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 20px;
+    color: #E5BD5A;
+}
+
+
+
+.swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4070f4;
+}
+
+
+/* ------------------------Media Query -------------------------*/
+
+@media screen and (min-width: 768px) {
+    .slide p {
+        padding: 0 10em;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .border {
+        height: 18.75em;
+    }
+
+    .first-container {
+        grid-template-columns: repeat(auto-fit, 350px);
+        grid-column-gap: 1.875em;
+
+
+    }
+
+    .second-container {
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+}
